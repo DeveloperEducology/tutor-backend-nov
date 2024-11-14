@@ -116,6 +116,6 @@ console.log(schoolPromise, schools)
 
 app.use("/", my_routes);
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server is listening at http://localhost:${port}`);
 });
